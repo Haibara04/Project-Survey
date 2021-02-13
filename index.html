@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Survey</title>
+</head>
+<body>
+	<h1 id="title">Customer Survey Form</h1>
+	<p id="description">Thank you for choosing our company for taking the time to help us improve our services.</p>
+	<div id="body">
+		<form id="survey-form">
+
+			<label id="name-label" for="name">
+				<p>Name:</p>
+			</label>
+
+			<input id="name" type="text" placeholder="Enter your name" required>
+
+			<label id="email-label" for="email">
+				<p>Email:</p>
+			</label>
+
+			<input id="email" type="email" placeholder="Enter your Email">
+
+			<label id="number-label" for="number">
+  				<p>Age:</p>
+  			</label>
+  
+  			<input id="number" type="number" placeholder="Enter Your Age" min="12" max="50" required>
+
+  			<p>How likely is that you would recommend our seminar to a friend?
+  			</p>
+  			<select id="dropdown">
+  				<option value="default">Nothing</option>
+  				<option value="Not Sure">Not Sure</option>
+  				<option value="Maybe">Maybe</option>
+  				<option value="Definitely">Definitely</option>
+  			</select>
+
+  			<p>Which option best describes your role?
+  			</p>
+  			<select id="dropdown">
+  				<option value="default">Student</option>
+  				<option value="Unemployed">Unemployed</option>
+  				<option value="Employed">Employed</option>
+  				<option value="Retired">Retired</option>
+  			</select>
+
+			
+  			<p>Things that should be improved in the future seminars(Check all that apply):</p>
+
+			<input type="checkbox" name="Front-end Project" value="1">Front-end Project</input>
+			<br>
+ 			<input type="checkbox" name="Back-end Project " value="2">Back-end Project</input>
+			<br>
+ 			<input type="checkbox" name="Data Visualization" value="3">Data Visualization</input>
+			<br>
+ 			<input type="checkbox" name="City Meetups" value="4">City Meetups</input>
+			<br>
+ 			<input type="checkbox" name="Forum" value="5">Forum</input>
+			<br>
+  			
+	<textarea id="comment" rows="4" cols="40">Add Your Comment Here</textarea>
+	<br>
+	<input id="submit" type="submit" value="Submit">
+		</form>
+	</div>
+
+</body>
+</html>
